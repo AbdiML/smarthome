@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Metadatos -->
+    <meta charset="utf-8">
+    <meta name="author" content="Jane Doe">
+    <meta name="description" content="Portafolio de desarrollo web de Jane Doe">
+    <meta name="keywords" content="HTML, CSS, JavaScript, React">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Título -->
+    <title>Proyecto Casa Inteligente</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="imagenes/casa-inteligente-icono.png">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <!-- CSS -->
+    <link href="style.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Rubik+Dirt&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbar-toggler" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar-toggler">
+                <a class="navbar-brand" href="#">
+                    <img src="imagenes/casa-inteligente-icono.png" width="50" alt="Logo de la página web">
+                </a>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#descripcion">Descripción</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#integrantes">Integrantes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#herramientas">Herramientas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#paso-a-paso">Paso a Paso</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sección imagen y nombre -->
+    <section class="hero d-flex flex-column align-items-center text-center">
+        <div class="hero-principal py-5">
+            <h1>Proyecto Casa Inteligente</h1>
+        </div>
+        <div class="hero-inferior">
+            <img class="hero-inferior-imagen img-fluid" src="imagenes/vivienda_inteligente.png" alt="Monitor, laptop y logos de HTML, CSS, JavaScript y React.">
+        </div>
+    </section>
+
+    <!-- Descripción del proyecto -->
+    <section id="descripcion" class="seccion seccion-oscura text-center py-5">
+        <div class="container">
+            <h2 class="seccion-titulo">Descripción Breve</h2>
+            <p class="seccion-texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras laoreet, odio eget fringilla scelerisque, sem purus fringilla mauris, nec ultricies nisl nisl sit amet dolor. Donec et venenatis nunc, vel hendrerit ex. Vestibulum sapien ipsum, rutrum eget est et, ultricies sagittis urna. In non volutpat est. Vestibulum diam sapien, ultrices et euismod at, ultrices ut odio. Nullam in massa et elit ultrices suscipit. Proin lacinia leo ac posuere placerat.</p>
+        </div>
+    </section>
+
+    <!-- Integrantes -->
+    <section id="integrantes" class="seccion seccion-clara text-center py-5">
+        <div class="container">
+            <h2 class="seccion-titulo">Integrantes</h2>
+            <h3 class="seccion-descripcion">Estos son los integrantes que conforman el grupo</h3>
+            <!-- Carrusel -->
+            <div id="testimonios-carrusel" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="d-flex flex-column align-items-center">
+                            <img class="testimonio-imagen rounded" src="imagenes/cliente1.svg" alt="Foto de Nombre 1">
+                            <div class="testimonio-info">
+                                <p class="cliente">Jonathan Alexander Amézquita Figueroa </p>
+                                <p class="cargo">Programación de microcontroladores y aplicación android.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-flex flex-column align-items-center">
+                            <img class="testimonio-imagen rounded" src="imagenes/cliente2.svg" alt="Foto de Nombre 2">
+                            <div class="testimonio-info">
+                                <p class="cliente">Abdi Josué Santos Marroquín</p>
+                                <p class="cargo">Desarrollo de pagina WEB</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-flex flex-column align-items-center">
+                            <img class="testimonio-imagen rounded" src="imagenes/integrante3.jpeg" alt="Foto de Nombre 3">
+                            <div class="testimonio-info">
+                                <p class="cliente">Sonia Maribel Chinchilla Canel</p>
+                                <p class="cargo">Logística</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-flex flex-column align-items-center">
+                            <img class="testimonio-imagen rounded" src="imagenes/cliente3.svg" alt="Foto de Nombre 3">
+                            <div class="testimonio-info">
+                                <p class="cliente">Brandon Ulises Fuentes Mendoza</p>
+                                <p class="cargo">Armado y cableado</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#testimonios-carrusel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#testimonios-carrusel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Herramientas -->
+    <section id="herramientas" class="seccion seccion-oscura text-center py-5">
+        <div class="container">
+            <h2 class="seccion-titulo">Herramientas</h2>
+            <div class="accordion accordion-flush rounded" id="accordionFlushExample">
+                <div class="accordion-item rounded">
+                    <h2 class="accordion-header rounded" id="flush-headingOne">
+                        <button class="accordion-button collapsed rounded" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            IDLE Arduino
+                        </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            Es el entorno de desarrollo integrado (IDE) de Arduino, que facilita la escritura de código y la carga de programas a las placas Arduino. Existen dos versiones principales, IDE 1.x y IDE 2.x, siendo esta última una versión más moderna y potente.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item rounded">
+                    <h2 class="accordion-header rounded" id="flush-headingTwo">
+                        <button class="accordion-button collapsed rounded" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            MicroBasic
+                        </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Es un lenguaje de programación de alto nivel utilizado en controladores de motores Roboteq, que permite a los usuarios escribir programas que se guardan y ejecutan desde la memoria flash del controlador.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item rounded">
+                    <h2 class="accordion-header rounded" id="flush-headingThree">
+                        <button class="accordion-button collapsed rounded" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                            MicroPascal
+                        </button>
+                    </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            Lenguaje de programación utilizado para la programación de controladores análogos y digitales basado en el lenguaje de programación Pascal.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item rounded ">
+                    <h2 class="accordion-header rounded" id="flush-headingFour">
+                        <button class="accordion-button collapsed rounded" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                            PICKIT3 Programmer
+                        </button>
+                    </h2>
+                    <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            Es un programador y depurador en circuito para microcontroladores PIC y dsPIC de Microchip. No se recomienda para producción, sino para propósitos de desarrollo.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item rounded">
+                    <h2 class="accordion-header rounded" id="flush-headingFive">
+                        <button class="accordion-button collapsed rounded" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                            Proteus
+                        </button>
+                    </h2>
+                    <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            Es una suite de software de automatización de diseño electrónico (EDA) utilizada principalmente para la creación de esquemas electrónicos y diseños de placas de circuito impreso (PCB).
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item rounded">
+                    <h2 class="accordion-header rounded" id="flush-headingSix">
+                        <button class="accordion-button collapsed rounded type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+                            KiCAD
+                        </button>
+                    </h2>
+                    <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            Es una suite de software de código abierto para la automatización del diseño electrónico (EDA). Incluye captura de esquemas, diseño de PCB y visualización en 3D, disponible para Windows, macOS y Linux.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item rounded">
+                    <h2 class="accordion-header rounded" id="flush-headingSeven">
+                        <button class="accordion-button collapsed rounded" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
+                            MIT App Inventor 2
+                        </button>
+                    </h2>
+                    <div id="flush-collapseSeven" class="accordion-collapse collapse" aria-labelledby="flush-headingSeven" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            Es un entorno de programación visual basado en bloques, mantenido por el MIT, que permite a los principiantes crear aplicaciones para Android y iOS. Es conocido por su interfaz gráfica de usuario (GUI) similar a Scratch, que permite a los usuarios arrastrar y soltar objetos visuales para crear una aplicación.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item rounded">
+                    <h2 class="accordion-header rounded" id="flush-headingEight">
+                        <button class="accordion-button collapsed rounded" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEight" aria-expanded="false" aria-controls="flush-collapseEight">
+                            Compilation Inventor (Android)
+                        </button>
+                    </h2>
+                    <div id="flush-collapseEight" class="accordion-collapse collapse" aria-labelledby="flush-headingEight" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            Se refiere al proceso de compilar aplicaciones creadas en MIT App Inventor para dispositivos Android. Las aplicaciones se pueden probar en tiempo real y depurar con la aplicación complementaria MIT AI2 Companion.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Paso a Paso -->
+    <section id="paso-a-paso" class="seccion seccion-clara text-center py-5">
+        <div class="container">
+            <h2 class="seccion-titulo">Paso a Paso</h2>
+            <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Etapa 1</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Etapa 2</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Etapa 3</button>
+                </li>
+            </ul>
+            <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                    <h3>LOGÍSTICA</h3>
+                    <p>- Discusión de Idea para el Proyecto:
+                    Hablado en Clase; se planteó entre los integrantes del grupos varias propuestas para el proyecto entre ellas un carro a control remoto, un dispensador de comida para perro, una casa inteligente, dependiendo de la complejidad en el desarrollo, costeo total y distribución del trabajo entre los integrantes, decidimos utilizar la casa la cual bautizamos como la “Smart Home”</p>
+                    <p>- Determinación de la Funcionalidad del Proyecto
+                    Al escoger como proyecto una casa inteligente, debíamos determinar el significado de “casa inteligente” por lo que discutimos distintas áreas funcionales que podría necesitar una casa al combinarla con la tecnología.</p>
+                    <p>- Distribución del Trabajo:
+                    Las tareas a cumplir para completar el proyecto se distribuyeron de tal manera que cada integrante pudiera desempeñarse en la rama que mejor trabajara. Por lo que lo dividimos en la siguiente manera:
+                    Ing. Figueroa: Organización, Programación, Simulación, Diagramado, Aplicación Android.
+                    Ing. Santos: Desarrollo Web, programación
+                    Ing. Fuentes: Ensamblado, Tester/Probador de Hardware
+                    Ing. Canel: Maqueta Escalada, Diseño, Informe de Redacción, Requerimientos, elaboración de presupuesto.</p>
+                    <p>- Recolección de Material De Trabajo</p>
+                </div>
+                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                    <h3>EJECUCIÓN</h3>
+                    <p>- MAQUETA
+                    - Análisis de diseños y propuestas sacados de la Web: Durante varios días se estuvo platicando de cuantos planos, habitaciones, pisos y espacios contaría la casa
+                    - Tasa Presupuestaria en Materiales: Al determinar los requisitos para comenzar a elaborar una maqueta, se platico un rango de precios para escoger de qué tipo de material se haría.
+                    - Diseño en planos 2D: se presentó un diseño preliminar para aprobar su elaboración.</p>
+                    <p>- PÁGINA WEB</p>
+                    <p>- PROGRAMACIÓN DE LOS CONTROLADORES
+                    - Distribución: Ya determinadas las funcionalidades del proyecto, se distribuyó el trabajo en las distintas áreas de control (los distintos microcontroladores y módulos con los que contábamos)
+                    - Microcontrolador PIC16F877A: Primera área de control encargada de la lectura de sensores de seguridad, activación y desactivación de la alarma y envío de confirmación al área de control central.
+                    - Node MCU ESP8266 LOL1n: Área de Control Central; es el encargado de ser el intérprete de los demás módulos y controladores, este controlador a pesar de tener una potencia menor al microcontrolador PIC, cuenta con la característica de tener conectividad por medio de bluetooth y por medio de conexión WIFI. La tarea del ESP es dar y recibir datos provenientes de la aplicación móvil, por medio del módulo bluetooth.</p>
+                    <p>- SIMULACIÓN
+                    Simulación Virtual: se utilizan herramientas tanto de creación de conexiones (diagramas) y de simulación de código.</p>
+                    <p>- PROGRAMACIÓN DE LA APLICACIÓN MÓVIL
+                    - Creación de la Interfaz: Se planteó una previo de las pantallas principales y secundarias de la aplicación, así como la tarea que desempeñará.
+                    - Lanzamiento de Distintas Versiones: Para la creación del APK final, se fueron guardando y mostrando varias versiones que pueden representar la evolución de la aplicación.
+                    - Programación del MCU: Para establecer una conexión inalámbrica entre la aplicación y el circuito se emplearon métodos de conectividad por comparación de caracteres. Quiere decir que está programado para que al emplear la función de un botón/push la aplicación envíe 2 caracteres los cuales se comparan dentro de MCU y si son correctos ejecutará la acción.
+                    - Aplicación Final: Concluida la aplicación final, se lanza el APK para ser probado en distintos celulares y queda lista para el testeo junto al circuito ya armado físico.</p>
+                </div>
+                <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                    <h3>Testeo y Etapa Final</h3>
+                    <p>- REFINAMIENTO DE LA MAQUETA
+                    Materiales extra
+                    Cambios empleados
+                    Tiempo para aplicar esos cambios, entre otros.</p>
+                    <p>- TESTEO DE PROGRAMACIÓN
+                    Testeo de programación del PIC
+                    Testeo de programación de MCU
+                    Prueba de los sensores</p>
+                    <p>- CABLEADO DEL CIRCUITO</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pie de página (footer) -->
+    <footer class="seccion seccion-oscura d-flex flex-column align-items-center justify-content-center py-4">
+        <div class="derechos-de-autor">Creado por Abdi Santos (2024) &#169;</div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+</html>
