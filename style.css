@@ -22,6 +22,9 @@ h1, h2 {
   font-family: 'Rubik Dirt', cursive;
 }
 
+p{
+  text-align: justify;
+}
 .seccion-oscura {
   color: white;
   background-color: #1b1b32;
