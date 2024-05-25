@@ -73,7 +73,7 @@ p{
 
 .testimonio-imagen {
   height: 300px;
-  width: 350px;
+  width: auto;
   margin-bottom: 1rem;
 }
 
