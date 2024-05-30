@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Metadatos -->
+    <meta charset="utf-8">
+    <meta name="author" content="Jane Doe">
+    <meta name="description" content="Portafolio de desarrollo web de Jane Doe">
+    <meta name="keywords" content="HTML, CSS, JavaScript, React">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Título -->
+    <title>Proyecto Casa Inteligente</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="imagenes/casa-inteligente-icono.png">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <!-- CSS -->
+    <link href="style.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Rubik+Dirt&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbar-toggler" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar-toggler">
+                <a class="navbar-brand" href="#">
+                    <img src="imagenes/casa-inteligente-icono.png" width="50" alt="Logo de la página web">
+                </a>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="/smarthome/">Descripción</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ">Integrantes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/smarthome/Herramientas" >Herramientas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active">Paso a Paso</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+   
+    <section class="s_text_block pt40 pb40 o_colored_level seccion-oscura" data-snippet="s_text_block" data-name="Texto" style="background-image: none; padding: 20px;">
+        <div class="container s_allow_columns">
+            <h3>LOGÍSTICA</h3>
+            <p><b>- Discusión de Idea para el Proyecto:</b>
+            Hablado en Clase; se planteó entre los integrantes del grupos varias propuestas para el proyecto entre ellas un carro a control remoto, un dispensador de comida para perro, una casa inteligente, dependiendo de la complejidad en el desarrollo, costeo total y distribución del trabajo entre los integrantes, decidimos utilizar la casa la cual bautizamos como la “Smart Home”</p>
+            <p><b>- Determinación de la Funcionalidad del Proyecto</b>
+            Al escoger como proyecto una casa inteligente, debíamos determinar el significado de “casa inteligente” por lo que discutimos distintas áreas funcionales que podría necesitar una casa al combinarla con la tecnología.</p>
+            <p><b> Distribución del Trabajo:</b>
+            Las tareas a cumplir para completar el proyecto se distribuyeron de tal manera que cada integrante pudiera desempeñarse en la rama que mejor trabajara. Por lo que lo dividimos en la siguiente manera:
+            Ing. Figueroa: Organización, Programación, Simulación, Diagramado, Aplicación Android.
+            Ing. Santos: Desarrollo Web, programación
+            Ing. Fuentes: Ensamblado, Tester/Probador de Hardware
+            Ing. Canel: Maqueta Escalada, Diseño, Informe de Redacción, Requerimientos, elaboración de presupuesto.</p>
+            <p>- Recolección de Material De Trabajo</p>
+            <h3>EJECUCIÓN</h3>
+            <p class="texto-paso-paso"> - MAQUETA <br><br>
+            <br><b>- Análisis de diseños y propuestas sacados de la Web:</b> Durante varios días se estuvo platicando de cuantos planos, habitaciones, pisos y espacios contaría la casa
+            <br><b>- Tasa Presupuestaria en Materiales:</b> Al determinar los requisitos para comenzar a elaborar una maqueta, se platico un rango de precios para escoger de qué tipo de material se haría.
+            <br><b>- Diseño en planos 2D:</b> se presentó un diseño preliminar para aprobar su elaboración.</p>
+            <p class="texto-paso-paso">- PÁGINA WEB</p>
+            <p class="texto-paso-paso"> <b>- PROGRAMACIÓN DE LOS CONTROLADORES</b>
+            <br><b>- Distribución:</b> Ya determinadas las funcionalidades del proyecto, se distribuyó el trabajo en las distintas áreas de control (los distintos microcontroladores y módulos con los que contábamos)
+            <br><b>- Microcontrolador PIC16F877A:</b> Primera área de control encargada de la lectura de sensores de seguridad, activación y desactivación de la alarma y envío de confirmación al área de control central.
+            <br><b>- Node MCU ESP8266 LOL1n:</b> Área de Control Central; es el encargado de ser el intérprete de los demás módulos y controladores, este controlador a pesar de tener una potencia menor al microcontrolador PIC, cuenta con la característica de tener conectividad por medio de bluetooth y por medio de conexión WIFI. La tarea del ESP es dar y recibir datos provenientes de la aplicación móvil, por medio del módulo bluetooth.</p>
+            <p class="texto-paso-paso">- SIMULACIÓN <br><br>
+            <b>Simulación Virtual:</b> se utilizan herramientas tanto de creación de conexiones (diagramas) y de simulación de código.</p>
+            <p class="texto-paso-paso">- PROGRAMACIÓN DE LA APLICACIÓN MÓVIL <br><br>
+            <b>- Creación de la Interfaz:</b> Se planteó una previo de las pantallas principales y secundarias de la aplicación, así como la tarea que desempeñará.
+            <br><b>- Lanzamiento de Distintas Versiones:</b> Para la creación del APK final, se fueron guardando y mostrando varias versiones que pueden representar la evolución de la aplicación.
+            <br><b>- Programación del MCU:</b> Para establecer una conexión inalámbrica entre la aplicación y el circuito se emplearon métodos de conectividad por comparación de caracteres. Quiere decir que está programado para que al emplear la función de un botón/push la aplicación envíe 2 caracteres los cuales se comparan dentro de MCU y si son correctos ejecutará la acción.
+            <br><b>- Aplicación Final:</b> Concluida la aplicación final, se lanza el APK para ser probado en distintos celulares y queda lista para el testeo junto al circuito ya armado físico.</p>
+            <h3>Testeo y Etapa Final</h3>
+            <p class="texto-paso-paso"><b>- REFINAMIENTO DE LA MAQUETA</b>
+            Materiales extra
+            Cambios empleados
+            Tiempo para aplicar esos cambios, entre otros.</p>
+            <p class="texto-paso-paso"><b>- TESTEO DE PROGRAMACIÓN</b>
+            Testeo de programación del PIC
+            Testeo de programación de MCU
+            Prueba de los sensores</p>
+            <p class="texto-paso-paso">- CABLEADO DEL CIRCUITO</p>
+        </div>
+    </section>
+
+    <section class="s_image_gallery o_spc-small o_masonry pt24 pb24 o_colored_level" data-vcss="001" data-columns="3" style="overflow: hidden; background-image: none;" data-snippet="s_images_wall" data-name="Muro de imágenes">
+        <div class="container">
+            <div class="row s_nb_column_fixed">
+                <div class="o_masonry_col o_snippet_not_selectable col-lg-4">
+                    <img class="img img-fluid d-block imagen-muro" src="imagenes/imagenes de proceso/imagen1.jpeg" data-index="0" data-name="Image" alt=" " loading="lazy" data-mimetype="image/jpeg" data-original-id="355" data-original-src="/web/image/355-16f1c40e/website.library_image_03" data-mimetype-before-conversion="image/jpeg"/>
+                    <img class="img img-fluid d-block" src="imagenes/imagenes de proceso/imagen7.jpeg" data-index="3" data-name="Image" alt=" " loading="lazy" data-mimetype="image/jpeg" data-original-id="356" data-original-src="/web/image/356-e0d9c579/website.library_image_10" data-mimetype-before-conversion="image/jpeg"/>
+                </div>
+                <div class="o_masonry_col o_snippet_not_selectable col-lg-4">
+                    <img class="img img-fluid d-block imagen-muro" src="imagenes/imagenes de proceso/imagen3.jpeg" data-index="1" data-name="Image" alt=" " loading="lazy" data-mimetype="image/jpeg" data-original-id="357" data-original-src="/web/image/357-6180a3a5/website.library_image_13" data-mimetype-before-conversion="image/jpeg"/>
+                    <img class="img img-fluid d-block imagen-muro" src="imagenes/imagenes de proceso/imagen4.jpeg" data-index="4" data-name="Image" alt=" " loading="lazy" data-mimetype="image/jpeg" data-original-id="358" data-original-src="/web/image/358-56f55571/website.library_image_05" data-mimetype-before-conversion="image/jpeg"/>
+                </div>
+                <div class="o_masonry_col o_snippet_not_selectable col-lg-4">
+                    <img class="img img-fluid d-block imagen-muro" src="imagenes/imagenes de proceso/imagen5.jpeg" data-index="2" data-name="Image" alt=" " loading="lazy" data-mimetype="image/jpeg" data-original-id="359" data-original-src="/web/image/359-d2479562/website.library_image_14" data-mimetype-before-conversion="image/jpeg"/>
+                    <img class="img img-fluid d-block imagen-muro" src="imagenes/imagenes de proceso/imagen6.jpeg" data-index="5" data-name="Image" alt=" " loading="lazy" data-mimetype="image/jpeg" data-original-id="360" data-original-src="/web/image/360-c46c4400/website.library_image_16" data-mimetype-before-conversion="image/jpeg"/>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+</html>
+
+
+
+
+
+
