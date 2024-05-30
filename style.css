@@ -71,10 +71,18 @@ h1, h2 {
   height: 100%;
 }
 
-.testimonio-imagen {
-  height: 300px;
-  width: auto;
+.integrante_imagen {
+  height: auto;
+  width: 100px;
   margin-bottom: 1rem;
+}
+
+.integrante_info{
+  margin-bottom: 20px;
+}
+
+.integrante_info_texto{
+  text-align: justify;
 }
 
 .testimonio-texto {
